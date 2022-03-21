@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "f6f0fb54-b1fb-48e0-b99e-e1bc38d35cb8",
+		"name": "currency-exchange-rate-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "inant",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "inant@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "inant@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Currency",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTBiNjQ1NWY3MWFiZTgyYjU2MmM0YmFiMWVjOWZhYmIxOGNiYTRkMmUwNzQ1MjI4YzBhMmU1MjJiMDliYjVjNGU5MzNiOGUxZmYxMmVlNzYiLCJpYXQiOjE2NDc4MDc3MDEuMDA2ODc4LCJuYmYiOjE2NDc4MDc3MDEuMDA2ODgsImV4cCI6MTY3OTM0MzcwMS4wMDExMzgsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.Bx0q0kVWRz5PO4ZnLNoTQl1xuYvIKU8cwRJ88xh69CyCF4quBOk542x8fbl1md10Ver8Z6JT_8m6y5GwD9EteWNPy8gfiDv1vgKPp5mwuUjG0B-CPSdGQZ5L1U-BwEwRtZY0iXre6LGR74kPBxK2Ji2OI0UBvYKNec1Ht0yVe2cDmis-DKyKoRkWEnEwuQvGisXbhNM00w5CHPS8bWp9pMucqn4eBLlXUQd5nVcfEaw_tdo_c6XrPl9k0LKWcpwlqoMFXyU9voE46-LaN7xk0sr51ysezIrbv_nOVggybJ71JluJ_1M_yZ6EzUnJ8QiUky8VaAxFSt60YNRb-Mvm-_d_QH2ol7dMOdQqUbtUyaljzWp3SE6du40KBmStaqBf55Ng-G1WjHqXKHLsqj8iY3QG0V4XYHusPlp2oRHTuogUvKcepPd8ONNqufvnwmXwEMAO3zqvVn_K-qFCTYjepo0M5n3IRS8ALXobCkaPi-JUx3kQUAVLU2jVM4LqR0Bv27b_9T_vuM1S-rMhXO3IvUjM7cZ3YJyotZZOUDcqej39TT1ID8c-wN-0s7CSAPzTO-DAjAKHLCZbcfpoXigjEtRodYZkxmuc9Z6RrflN1QDigsAvix4VJkf0rzAcy9ql1SR9rr8riN9BhFHOrlCNEUPOmqqdwhIJPg_AOAezsy8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/currency",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"currency"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Currency",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTBiNjQ1NWY3MWFiZTgyYjU2MmM0YmFiMWVjOWZhYmIxOGNiYTRkMmUwNzQ1MjI4YzBhMmU1MjJiMDliYjVjNGU5MzNiOGUxZmYxMmVlNzYiLCJpYXQiOjE2NDc4MDc3MDEuMDA2ODc4LCJuYmYiOjE2NDc4MDc3MDEuMDA2ODgsImV4cCI6MTY3OTM0MzcwMS4wMDExMzgsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.Bx0q0kVWRz5PO4ZnLNoTQl1xuYvIKU8cwRJ88xh69CyCF4quBOk542x8fbl1md10Ver8Z6JT_8m6y5GwD9EteWNPy8gfiDv1vgKPp5mwuUjG0B-CPSdGQZ5L1U-BwEwRtZY0iXre6LGR74kPBxK2Ji2OI0UBvYKNec1Ht0yVe2cDmis-DKyKoRkWEnEwuQvGisXbhNM00w5CHPS8bWp9pMucqn4eBLlXUQd5nVcfEaw_tdo_c6XrPl9k0LKWcpwlqoMFXyU9voE46-LaN7xk0sr51ysezIrbv_nOVggybJ71JluJ_1M_yZ6EzUnJ8QiUky8VaAxFSt60YNRb-Mvm-_d_QH2ol7dMOdQqUbtUyaljzWp3SE6du40KBmStaqBf55Ng-G1WjHqXKHLsqj8iY3QG0V4XYHusPlp2oRHTuogUvKcepPd8ONNqufvnwmXwEMAO3zqvVn_K-qFCTYjepo0M5n3IRS8ALXobCkaPi-JUx3kQUAVLU2jVM4LqR0Bv27b_9T_vuM1S-rMhXO3IvUjM7cZ3YJyotZZOUDcqej39TT1ID8c-wN-0s7CSAPzTO-DAjAKHLCZbcfpoXigjEtRodYZkxmuc9Z6RrflN1QDigsAvix4VJkf0rzAcy9ql1SR9rr8riN9BhFHOrlCNEUPOmqqdwhIJPg_AOAezsy8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/currencies",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"currencies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Currency",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTBiNjQ1NWY3MWFiZTgyYjU2MmM0YmFiMWVjOWZhYmIxOGNiYTRkMmUwNzQ1MjI4YzBhMmU1MjJiMDliYjVjNGU5MzNiOGUxZmYxMmVlNzYiLCJpYXQiOjE2NDc4MDc3MDEuMDA2ODc4LCJuYmYiOjE2NDc4MDc3MDEuMDA2ODgsImV4cCI6MTY3OTM0MzcwMS4wMDExMzgsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.Bx0q0kVWRz5PO4ZnLNoTQl1xuYvIKU8cwRJ88xh69CyCF4quBOk542x8fbl1md10Ver8Z6JT_8m6y5GwD9EteWNPy8gfiDv1vgKPp5mwuUjG0B-CPSdGQZ5L1U-BwEwRtZY0iXre6LGR74kPBxK2Ji2OI0UBvYKNec1Ht0yVe2cDmis-DKyKoRkWEnEwuQvGisXbhNM00w5CHPS8bWp9pMucqn4eBLlXUQd5nVcfEaw_tdo_c6XrPl9k0LKWcpwlqoMFXyU9voE46-LaN7xk0sr51ysezIrbv_nOVggybJ71JluJ_1M_yZ6EzUnJ8QiUky8VaAxFSt60YNRb-Mvm-_d_QH2ol7dMOdQqUbtUyaljzWp3SE6du40KBmStaqBf55Ng-G1WjHqXKHLsqj8iY3QG0V4XYHusPlp2oRHTuogUvKcepPd8ONNqufvnwmXwEMAO3zqvVn_K-qFCTYjepo0M5n3IRS8ALXobCkaPi-JUx3kQUAVLU2jVM4LqR0Bv27b_9T_vuM1S-rMhXO3IvUjM7cZ3YJyotZZOUDcqej39TT1ID8c-wN-0s7CSAPzTO-DAjAKHLCZbcfpoXigjEtRodYZkxmuc9Z6RrflN1QDigsAvix4VJkf0rzAcy9ql1SR9rr8riN9BhFHOrlCNEUPOmqqdwhIJPg_AOAezsy8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/currency/update-rate",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"currency",
+						"update-rate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Currency by Code",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTBiNjQ1NWY3MWFiZTgyYjU2MmM0YmFiMWVjOWZhYmIxOGNiYTRkMmUwNzQ1MjI4YzBhMmU1MjJiMDliYjVjNGU5MzNiOGUxZmYxMmVlNzYiLCJpYXQiOjE2NDc4MDc3MDEuMDA2ODc4LCJuYmYiOjE2NDc4MDc3MDEuMDA2ODgsImV4cCI6MTY3OTM0MzcwMS4wMDExMzgsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.Bx0q0kVWRz5PO4ZnLNoTQl1xuYvIKU8cwRJ88xh69CyCF4quBOk542x8fbl1md10Ver8Z6JT_8m6y5GwD9EteWNPy8gfiDv1vgKPp5mwuUjG0B-CPSdGQZ5L1U-BwEwRtZY0iXre6LGR74kPBxK2Ji2OI0UBvYKNec1Ht0yVe2cDmis-DKyKoRkWEnEwuQvGisXbhNM00w5CHPS8bWp9pMucqn4eBLlXUQd5nVcfEaw_tdo_c6XrPl9k0LKWcpwlqoMFXyU9voE46-LaN7xk0sr51ysezIrbv_nOVggybJ71JluJ_1M_yZ6EzUnJ8QiUky8VaAxFSt60YNRb-Mvm-_d_QH2ol7dMOdQqUbtUyaljzWp3SE6du40KBmStaqBf55Ng-G1WjHqXKHLsqj8iY3QG0V4XYHusPlp2oRHTuogUvKcepPd8ONNqufvnwmXwEMAO3zqvVn_K-qFCTYjepo0M5n3IRS8ALXobCkaPi-JUx3kQUAVLU2jVM4LqR0Bv27b_9T_vuM1S-rMhXO3IvUjM7cZ3YJyotZZOUDcqej39TT1ID8c-wN-0s7CSAPzTO-DAjAKHLCZbcfpoXigjEtRodYZkxmuc9Z6RrflN1QDigsAvix4VJkf0rzAcy9ql1SR9rr8riN9BhFHOrlCNEUPOmqqdwhIJPg_AOAezsy8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/currency/IDR",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"currency",
+						"IDR"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
