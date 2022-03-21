@@ -4,7 +4,7 @@
 - Postman
 
 # API Currency Source
-- https://openexchangerates.org/api/currencies.json?app_id=68d594634873459082f9bd1229c32088
+- https://openexchangerates.org
 
 # Attached Files
 ### Attached file located in 'attachements' folder
@@ -18,7 +18,9 @@
   - Open terminal, go to project directory
   - Run composer install
   - Rename file .env.example to .env
+  - Create new database
   - Set up database configuration in .env
+  - Run command php artisan migrate
   - Run command php artisan key:generate
   - Run php artisan serve
   
