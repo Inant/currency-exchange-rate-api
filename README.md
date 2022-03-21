@@ -57,7 +57,7 @@ This endpoint is used to see a list of all available currencies. To access this 
 ![api_all_currencies](https://i.ibb.co/nrLWT9y/get-currency.png)
 
 
-### 6. End Point Get Currency
+### 6. End Point Get Currency Exchange Rate
 
 This endpoint serves to get updated currency exchange rates based on currency codes. To access this endpoint, users are required to include their token.
 
