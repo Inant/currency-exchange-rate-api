@@ -3,6 +3,9 @@
 - MySql
 - Postman
 
+# API Currency Source
+- https://openexchangerates.org/api/currencies.json?app_id=68d594634873459082f9bd1229c32088
+
 # Attached Files
 ### Attached file located in 'attachements' folder
 - Postman API Collection
